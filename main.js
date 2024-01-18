@@ -57,7 +57,7 @@ function createAlien() {
 function drawSpaceship() {
   ctx.beginPath();
   ctx.rect(spaceshipX, canvas.height - spaceshipHeight, spaceshipWidth, spaceshipHeight);
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = "white";
   ctx.fill();
   ctx.closePath();
 }
@@ -66,7 +66,7 @@ function drawBullet() {
   if (bulletFired) {
 	ctx.beginPath();
 	ctx.rect(bulletX, bulletY, bulletWidth, bulletHeight);
-	ctx.fillStyle = '#fff';
+	ctx.fillStyle = "white";
 	ctx.fill();
 	ctx.closePath();
   }
@@ -92,7 +92,7 @@ function drawAlien(alien) {
   let alienY = alien.y + alienOffsetTop;
   ctx.beginPath();
   ctx.rect(alienX, alienY, alienWidth, alienHeight);
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = "white";
   ctx.fill();
   ctx.closePath();
 }
@@ -128,13 +128,13 @@ function handleCollision(alien) {
 
 function drawScore() {
   ctx.font = '16px Arial';
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = "white";
   ctx.fillText('Score: ' + score, 8, 20);
 }
 
 function drawLevel() {
   ctx.font = '16px Arial';
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = "white";
   ctx.fillText('Level: ' + level, canvas.width - 70, 20);
 }
 
